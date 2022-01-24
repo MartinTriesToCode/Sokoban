@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style.css">
+    <title>Sokoban</title>
+</head>
+<body>
+    <Header><h2>Welcome to Sokoban!</h2></Header>
+    <h1 id="message">Good luck!</h1>
+    <div class="container">
+        <div class="Left">
+            <div class="left1"><h2>Info</h2></div>
+            <div class="left2"><p>Sokoban is a classical puzzle game where the goal is to push all of the boxes onto the goals.</p></div>
+            <h2>Rules</h2>
+            <ul>
+                <li>Only one box can be pushed at a time.</li>
+                <li> A box cannot be pulled.</li>
+                <li>The player cannot walk through boxes or walls.</li>
+                <li>The puzzle is solved when all boxes are on the goals.</li>
+            </ul>
+        </div>
+        <div id="playground"></div>
+        <div class="Levels">
+            <div class="buttons">
+                <div class="level">Levels</div>
+                <Button class="button button1" onclick="previousLevel()"><</Button>
+                <Button class="button button2" onclick="nextLevel()">></Button>
+            </div>
+           <Button class="button button3" onclick="reset()">Reset</Button>
+        </div>
+    </div>
+    <script src="Base.js"></script>
+    <script src="Levels/Level1.js"></script>
+    <script src="Levels/Level2.js"></script>
+    <script src="Levels/Level3.js"></script>
+    <script src="Levels/Level4.js"></script>
+    <script src="Levels/Level5.js"></script>
+    <script src="index.js"></script>
+    <footer><h2>&copyMartin Lundgren</h2></footer>
+</body>
+</html>

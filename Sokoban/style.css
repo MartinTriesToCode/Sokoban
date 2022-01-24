@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+body{
+    background-color: #383838;
+}
+
+header{
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#message{
+    margin: 10px;
+    text-align: center;
+}
+
+
+.headline{
+    text-align: center;
+}
+
+.Levels{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.level{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.button{
+    background-color: chocolate;
+}
+
+.button1{
+    width: 60px;
+    height: 60px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.button2{
+    background-attachment: fixed;
+    background-position: center;
+    font-size: xx-large;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.button3{
+    width: 100px;
+    height: 50px;
+    font-size: larger;
+    justify-self: center;
+    cursor: pointer;
+}
+
+
+.Left{
+    padding: 30px;
+    border: 1px solid black;
+    font-size: larger;
+}
+
+.left1{
+    margin-bottom: 10px;
+}
+
+.left2{
+    margin-bottom: 10px;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    justify-content: center;
+}
+
+#playground{
+     margin: auto;
+     display: grid;
+     width: 600px;
+     height: 500px;
+     grid-template-rows: repeat(var(--grid-rows), 1fr);
+     grid-template-columns: repeat(var(--grid-cols), 1fr);
+     background-color:violet;
+}
+
+#playground > div >img{
+    width: 100%;
+    height: 100%;
+}
+
